@@ -1,0 +1,45 @@
+package quiz;
+import java.util.Scanner;
+public class Question1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner scan = new Scanner (System.in);
+		
+		int salary, year;
+		
+		System.out.println("Enter the salary: ");
+		salary = scan.nextInt();
+		System.out.println("Enter the year: ");
+		year = scan.nextInt();
+		
+		if (year>5) {
+			int bonus, newsalary;
+			bonus = salary * 5 /100;
+			System.out.println("Your bonus is RM" + bonus);
+		}
+		else {
+			System.out.println("no bonus");
+		}
+		
+		int highest=Integer.MIN_VALUE;
+		int lowest=Integer.MAX_VALUE;
+
+
+		System.out.println("\nEnter your salary from January until December: ");
+		int monthlysalary = scan.nextInt();
+
+	}
+
+}
+
+
+Output:
+Enter the salary: 
+4500
+Enter the year: 
+8
+Your bonus is RM225
+
+Enter your salary from January until December: 
