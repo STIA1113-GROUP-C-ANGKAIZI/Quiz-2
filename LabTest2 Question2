@@ -1,0 +1,60 @@
+package quiz;
+import java.util.Scanner;
+public class Labtest2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner scan = new Scanner(System.in);
+		int mark1=0, mark2=0, mark3=0;
+		int sum;
+		
+		for (int i=0; i>=0; i++) {
+		System.out.print("Enter the mark (0-100) for student 1: ");
+		mark1 = scan.nextInt();
+		if ((mark1>=0) && (mark1<=100)) {
+			break;
+		}
+		else if (mark1<0 || mark1>100) {
+			System.out.println("Invalid input, try again...");
+		}	
+		}
+		
+		for (int i=0; i>=0; i++) {
+			System.out.print("Enter the mark (0-100) for student 2: ");
+			mark2 = scan.nextInt();
+			if ((mark2>=0) && (mark2<=100)) {
+				break;
+			}
+			else if (mark2<0 || mark2>100) {
+				System.out.println("Invalid input, try again...");
+			}	
+			}
+		
+		for (int i=0; i>=0; i++) {
+			System.out.print("Enter the mark (0-100) for student 3: ");
+			mark3 = scan.nextInt();
+			if ((mark3>=0) && (mark3<=100)) {
+				break;
+			}
+			else if (mark3<0 || mark3>100) {
+				System.out.println("Invalid input, try again...");
+			}	
+			}
+		sum = mark1 + mark2 + mark3;
+		double average = sum / 3;
+		
+		System.out.printf("The average is: " + "%.2f", average);
+	}
+
+}
+
+Output:
+Enter the mark (0-100) for student 1: 56
+Enter the mark (0-100) for student 2: 101
+Invalid input, try again...
+Enter the mark (0-100) for student 2: -1
+Invalid input, try again...
+Enter the mark (0-100) for student 2: 99
+Enter the mark (0-100) for student 3: 45
+The average is: 66.00
